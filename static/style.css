@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  font-size: 21px;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 32em;
+  padding: 1em;
+}
+
+.top {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.logo h1 {
+  font-size: 1.618em;
+  margin: 0.5em 0 0;
+}
+
+.logo p {
+  margin: 0;
+  font-family: monospace;
+  letter-spacing: 0.12em;
+  text-align: right;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  margin: 0.125em;
+  padding: 0.5em;
+}
+.nav li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 32em) {
+  .logo p {
+    text-align: left;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav li {
+    margin: 0;
+    padding: 0.25em;
+  }
+  .nav li:last-child {
+    padding-right: 0;
+  }
+}
+
+.lede {
+  background: grey url('media/carousel/01.JPG') 50% 50%;
+  background-size: cover;
+  min-height: 18em;
+  position: relative;
+}
+.lede .bg {
+  background: grey url('media/carousel/01.JPG') 50% 50%;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+.lede .bg.next {
+  opacity: 0;
+  z-index: -1;
+}
+.lede .bg.next.fade-in {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
