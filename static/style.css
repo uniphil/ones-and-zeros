@@ -9,6 +9,9 @@ a {
 a:visited {
   color: #a38;
 }
+a[href="."] {
+  color: #000;
+}
 
 .container {
   box-sizing: border-box;
