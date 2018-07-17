@@ -85,3 +85,77 @@ body {
   opacity: 1;
   transition: opacity 2s ease-in;
 }
+
+.email-signup {
+  margin: 2em 0 0;
+}
+
+.email-signup h3 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0 0 0.5em;
+}
+
+.email-signup-fields {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -0.5em;
+}
+.mc-field-group,
+.mc-button-wrap {
+  margin: 0.25em;
+}
+.mc-field-group {
+  flex: 1 0 33%;
+}
+.mc-field-group > input {
+  width: 100%;
+}
+
+input, button {
+  box-sizing: border-box;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.618em;
+  padding: 0.25em 0.25em 0.125em;
+}
+input {
+  border: 2px solid #000;
+  border-radius: 0;
+  border-width: 0 0 2px;
+  text-align: center;
+}
+input:placeholder-shown {
+  background: #eee;
+  border-color: #999;
+}
+input:hover,
+input:focus {
+  background: #fff;
+  border-color: #000;
+}
+button {
+  background: #444;
+  border-color: #000;
+  border-width: 0 0 2px;
+  border-radius: 0.25em;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/* h5bp ish helpers */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
