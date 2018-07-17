@@ -48,6 +48,9 @@ body {
 }
 
 @media screen and (max-width: 32em) {
+  .top {
+    margin-bottom: 1em;
+  }
   .logo p {
     text-align: left;
   }
