@@ -3,6 +3,13 @@ body {
   font-size: 21px;
 }
 
+a {
+  color: #36c;
+}
+a:visited {
+  color: #a38;
+}
+
 .container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -123,7 +130,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 -0.5em;
+  margin: 0 -0.25em;
 }
 .mc-field-group,
 .mc-button-wrap {
@@ -144,7 +151,7 @@ input, button {
   padding: 0.25em 0.25em 0.125em;
 }
 input {
-  border: 2px solid #000;
+  border: 2px solid #36c;
   border-radius: 0;
   border-width: 0 0 2px;
   text-align: center;
@@ -156,10 +163,10 @@ input:placeholder-shown {
 input:hover,
 input:focus {
   background: #fff;
-  border-color: #000;
+  border-color: #a38;
 }
 button {
-  background: #444;
+  background: #36c;
   border-color: #000;
   border-width: 0 0 2px;
   border-radius: 0.25em;
