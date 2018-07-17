@@ -21,6 +21,9 @@ body {
   font-size: 1.618em;
   margin: 0.5em 0 0;
 }
+.logo h1 a {
+  color: #000;
+}
 
 .logo p {
   margin: 0;
@@ -61,13 +64,21 @@ body {
 }
 
 .lede {
+}
+.lede p {
+  line-height: 1.4em;
+}
+
+.preview {
   background: grey url('media/carousel/01.JPG') 50% 50%;
   background-size: cover;
-  height: 60vw;
-  max-height: 18em;
+  box-sizing: border-box;
+  height: 65vw;
+  max-height: 20em;
   position: relative;
+  text-align: center;
 }
-.lede .bg {
+.preview .bg {
   background: grey url('media/carousel/01.JPG') 50% 50%;
   background-size: cover;
   bottom: 0;
@@ -77,23 +88,31 @@ body {
   top: 0;
   z-index: -2;
 }
-.lede .bg.next {
+.preview .bg.next {
   opacity: 0;
   z-index: -1;
 }
-.lede .bg.next.fade-in {
+.preview .bg.next.fade-in {
   opacity: 1;
   transition: opacity 2s ease-in;
 }
 
-.email-signup {
-  margin: 2em 0 0;
-}
-
-.email-signup h3 {
+.preview h3 {
+  background: hsla(0, 0%, 100%, 0.8);
+  bottom: 0;
   font-size: inherit;
-  font-weight: normal;
-  margin: 0 0 0.5em;
+  margin: 0;
+  padding: 0.5em 0.5em 0.25em;
+  position: absolute;
+  width: 100%;
+}
+@media screen and (max-width: 32em) {
+  .lede p {
+    line-height: 1.3em;
+  }
+  .preview h3 {
+    font-size: 0.8em;
+  }
 }
 
 .email-signup-fields {

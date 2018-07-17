@@ -1,4 +1,4 @@
-var lede; if (lede = document.getElementsByClassName('lede')[0]) {
+var preview; if (preview = document.getElementsByClassName('preview')[0]) {
   var current = 1;
   var TOTAL = 16;
 
@@ -12,8 +12,8 @@ var lede; if (lede = document.getElementsByClassName('lede')[0]) {
   bg.setAttribute('class', 'bg');
   next.setAttribute('class', 'bg next');
   next.style.backgroundImage = name(++current);
-  lede.appendChild(bg);
-  lede.appendChild(next);
+  preview.appendChild(bg);
+  preview.appendChild(next);
 
   function advance() {
     if (++current > TOTAL) current = 1;
@@ -25,7 +25,7 @@ var lede; if (lede = document.getElementsByClassName('lede')[0]) {
     }, 2000);
   }
 
-  lede.style.background = 'transparent';
+  preview.style.background = 'transparent';
 
   setInterval(advance, 6000);
 }
