@@ -117,7 +117,7 @@ a:visited {
   font-size: inherit;
   font-weight: inherit;
   margin: 0;
-  padding: 0.5em 0.5em 0.25em;
+  padding: 0.333em 0.5em 0.25em;
   position: absolute;
   width: 100%;
 }
