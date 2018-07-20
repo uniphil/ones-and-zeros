@@ -11,13 +11,14 @@ a:visited {
 }
 a[href="."] {
   color: #000;
+  text-decoration: none;
 }
 
 .container {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 32em;
-  padding: 0.667em;
+  padding: 0.667em 0.667em 0;
 }
 
 .top {
@@ -69,7 +70,7 @@ a[href="."] {
   }
   .nav li {
     margin: 0;
-    padding: 0.25em;
+    padding: 0.125em 0.25em;
   }
   .nav li:last-child {
     padding-right: 0;
@@ -200,4 +201,65 @@ button {
   position: absolute;
   width: 1px;
   white-space: nowrap; /* 1 */
+}
+
+.content {
+}
+.content img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}
+.content img + h2 {
+  background: hsla(0, 0%, 0%, 0.333);
+  color: #fff;
+  display: block;
+  line-height: 1em;
+  margin: -1.1em 0 0;
+  padding: 0.1em 0.25em 0;
+  position: relative;
+  text-shadow: 0 0 0.2em #000;
+  z-index: 1;
+}
+.content img.inline {
+  max-width: 40%;
+}
+.content img.inline {
+  float: right;
+  margin: 0 0 0.5em 0.5em;
+}
+.content h3 {
+  clear: both;
+}
+.content h3 + img.inline {
+  margin-top: -2em;
+}
+@media screen and (max-width: 32em) {
+  .content img + h2 {
+    font-size: 1.1em;
+  }
+  .content img.inline {
+    max-width: 75%;
+  }
+  .content img.inline,
+  .content h3 + img.inline {
+    float: none;
+    margin: 0;
+  }
+}
+
+blockquote {
+  font-family: serif;
+  font-style: italic;
+}
+
+footer {
+  color: #777;
+  margin-top: 5em;
+  padding: 0.25em 0;
+  text-align: center;
+}
+footer p {
+  font-size: 0.8em;
+  margin: 0;
 }
