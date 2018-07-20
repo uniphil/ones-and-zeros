@@ -1,4 +1,4 @@
-body {
+html {
   font-family: sans-serif;
   font-size: 21px;
 }
@@ -156,7 +156,7 @@ a[href="."] {
   width: 100%;
 }
 
-input, button {
+input, button, a.button {
   box-sizing: border-box;
   display: block;
   font-size: 0.8em;
@@ -179,15 +179,26 @@ input:focus {
   /*background: #fff;*/
   border-color: #a38;
 }
-button {
+button,
+a.button {
   background: #36c;
   border-color: #000;
-  border-width: 0 0 2px;
+  border-style: solid;
   border-radius: 0.25em;
+  border-width: 0 0 2px;
   color: #fff;
   cursor: pointer;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  text-shadow: 0 0 0.1em hsla(0, 0%, 0%, 0.5);
+}
+a.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+a.button.big {
+  font-size: 1rem
 }
 
 /* h5bp ish helpers */
