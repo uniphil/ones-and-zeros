@@ -225,6 +225,7 @@ a.button.big {
 }
 
 .content {
+  padding: 0 0.5em;
 }
 .content img {
   display: block;
