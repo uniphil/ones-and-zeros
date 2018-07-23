@@ -11,6 +11,7 @@ a:visited {
 }
 a[href="."] {
   color: #000;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -18,14 +19,15 @@ a[href="."] {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 32em;
-  padding: 0.667em 0.667em 0;
+  padding: 0.667em 0.167em 0;
 }
 
 .top {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  padding: 0 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .logo h1 {
@@ -78,9 +80,17 @@ a[href="."] {
 }
 
 .lede {
+  padding: 0 0.5em;
 }
 .lede p {
   line-height: 1.4em;
+}
+p.notice {
+  border-left: 2px solid hsl(220, 60%, 50%);
+  background: hsla(317, 54%, 43%, 0.1);
+  font-size: 0.85em;
+  padding: 0.5em 0.5em 0.333em;
+  margin: 0 -0.5em;
 }
 
 .preview {
