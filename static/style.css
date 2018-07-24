@@ -90,7 +90,8 @@ a[href="."] {
 .lede {
   padding: 0 0.5em;
 }
-.lede p {
+.lede p,
+.content p {
   line-height: 1.4em;
 }
 p.notice {
@@ -144,7 +145,8 @@ p.notice {
   width: 100%;
 }
 @media screen and (max-width: 32em) {
-  .lede p {
+  .lede p,
+  .content p {
     line-height: 1.3em;
   }
   .preview h3 {
@@ -189,12 +191,10 @@ input {
   text-align: center;
 }
 input:placeholder-shown {
-  /*background: hsla(317, 54%, 43%, 0.2);*/
   border-color: #000;
 }
 input:hover,
 input:focus {
-  /*background: #fff;*/
   border-color: #a38;
 }
 button,
@@ -219,7 +219,7 @@ a.button.big {
   font-size: 1rem
 }
 
-/* h5bp ish helpers */
+/* h5bp ish helper */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -237,8 +237,8 @@ a.button.big {
 }
 .content img {
   display: block;
-  margin: 0;
-  max-width: 100%;
+  margin: 0 -0.5em;
+  max-width: calc(100% + 1em);
 }
 .content img + h2 {
   background: hsla(0, 0%, 0%, 0.333);
@@ -281,9 +281,55 @@ a.button.big {
 blockquote {
   font-family: serif;
   font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 2em;
+}
+blockquote p {
+  line-height: 1.15em;
+  margin-bottom: 0.333em;
+}
+blockquote cite {
+  color: hsl(317, 54%, 43%);
+  display: block;
+  font-size: 0.8em;
+  text-align: right;
+  padding: 0.2em 0 0;
+}
+blockquote.over-image {
+  background-color: #666;
+  background-size: cover;
+  background-position: 50% 30%;
+  box-sizing: border-box;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  padding: 9em 0 0;
+  text-shadow: 0 0 4px #fff;
+}
+blockquote.over-image p,
+blockquote.over-image cite {
+  background: hsla(0, 0%, 100%, 0.9);
+  margin: 0;
+}
+
+blockquote.over-image p {
+  padding: 0.5em 2.5em;
+}
+blockquote.over-image cite {
+  display: block;
+  padding: 0 2.5em 0.333em;
+  text-align: right;
+}
+
+blockquote.paperquote {
+  background-image: url('/apply/pile-of-papers.jpg');
+}
+blockquote.foodquote {
+  background-image: url('/apply/food.jpg');
 }
 
 footer {
+  clear: both;
   color: #777;
   margin-top: 5em;
   padding: 0.25em 0;
@@ -292,4 +338,18 @@ footer {
 footer p {
   font-size: 0.8em;
   margin: 0;
+}
+
+h3,
+h4 {
+  margin: 2.5em 0 1em;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+li {
+  line-height: 1.4em;
+  margin: 0.5em 0;
 }
