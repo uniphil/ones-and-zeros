@@ -156,6 +156,7 @@ p.notice {
 
 .email-signup {
   /*background: hsla(317, 54%, 43%, 1);*/
+  padding: 0 0.5em;
 }
 
 .email-signup-fields {
