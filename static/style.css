@@ -353,3 +353,9 @@ li {
   line-height: 1.4em;
   margin: 0.5em 0;
 }
+
+hr {
+  margin-top: 3em;
+  border: 2px dashed #555;
+  border-width: 2px 0 0;
+}
