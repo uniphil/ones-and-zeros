@@ -323,7 +323,8 @@ blockquote.over-image cite {
 }
 
 blockquote.paperquote {
-  background-image: url('/apply/pile-of-papers.jpg');
+  background-image: url('/apply/people-binarying.jpg');
+  /*background-image: url('/apply/pile-of-papers.jpg');*/
 }
 blockquote.foodquote {
   background-image: url('/apply/food.jpg');
