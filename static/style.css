@@ -279,16 +279,28 @@ a.button.big {
   }
 }
 
+.writeup {
+  font-size: 0.85em;
+}
+
 blockquote {
   font-family: serif;
   font-style: italic;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 0 0.5em;
+}
+.writeup blockquote {
+  background: hsl(220, 60%, 93%);
+  border-left: 2px solid hsl(317, 54%, 43%);
+  padding: 0.5em 0.5em;
 }
 blockquote p {
   line-height: 1.15em;
   margin-bottom: 0.333em;
+}
+.writeup blockquote p {
+  margin: 0;
 }
 blockquote cite {
   color: hsl(317, 54%, 43%);
