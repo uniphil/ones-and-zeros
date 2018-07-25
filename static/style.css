@@ -336,10 +336,27 @@ blockquote.over-image cite {
 
 blockquote.paperquote {
   background-image: url('/apply/people-binarying.jpg');
-  /*background-image: url('/apply/pile-of-papers.jpg');*/
 }
 blockquote.foodquote {
   background-image: url('/apply/food.jpg');
+}
+
+@media screen and (max-width: 32em) {
+  blockquote {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  blockquote.over-image {
+    padding-top: 7em;
+  }
+  blockquote.over-image p,
+  blockquote.over-image cite {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  blockquote.over-image p {
+    font-size: 0.85em;
+  }
 }
 
 footer {
@@ -362,10 +379,17 @@ h4 {
 ul {
   padding-left: 2em;
 }
-
 li {
   line-height: 1.4em;
   margin: 0.5em 0;
+}
+@media screen and (max-width: 32em) {
+  ul {
+    padding-left: 1em;
+  }
+  li {
+    line-height: 1.3em;
+  }
 }
 
 hr {
