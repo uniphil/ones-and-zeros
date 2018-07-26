@@ -397,3 +397,8 @@ hr {
   border: 2px dashed #555;
   border-width: 2px 0 0;
 }
+
+.minor {
+  font-size: 0.85em;
+  margin-top: 4rem;
+}
