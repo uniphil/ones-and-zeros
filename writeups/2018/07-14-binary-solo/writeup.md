@@ -41,7 +41,7 @@ All participants except Riley and I had little to no prior programming experienc
 I used two themes for the presentation: light for core content, dark for technical digressions.
 This was inspired by a teaching tech unconference session at a !!con, and worked very well.
 
-[!The light and dark slide themes used](./slide-formats.png)
+![The light and dark slide themes used](./slide-formats.png)
 
 > I thought the slide format worked well and I like the switch between purple/white.
 
@@ -299,3 +299,6 @@ The goals of the workshop were met!
 > [another attendee] feels SO accomplished and proud!!!
 
 > it was so approachable and accessible!
+
+
+![Panorama of the classroom](./jul18-pano.jpg)
