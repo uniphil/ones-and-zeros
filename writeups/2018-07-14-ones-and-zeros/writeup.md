@@ -3,7 +3,7 @@
 On July 14<sup>th</sup> 2018, seven people crowded into my living with me for the first Ones and Zeros workshop.
 This project has been in development since I attended the NYC [School for Poetic Computation](http://sfpc.io) sprint 2018 session, and based on the success of this first run, I hope to keep developing it further.
 
-This documentation is intented to record what happened at the workshop, summarize the feedback, and lay some groundwork for transparency and accountability into the Ones and Zeros project.
+This documentation is intended to record what happened at the workshop, summarize the feedback, and lay some groundwork for transparency and accountability into the Ones and Zeros project.
 
 Feedback was collected twice: once as a group (over watermelon!) immediately following the workshop, and again individually through [a survey](https://airtable.com/shr6xgtVOrodeTksj).
 (linked here to show the questions, wording, and format. Please don't submit responses unless you were there :) ).
@@ -49,9 +49,9 @@ It would probably be worth communicating the start time as a window for coffee a
 
 ### Introductions
 
-Many attendees knew each other prior to the workshop. In the future, get nametags and plan a better intro activity.
+Many attendees knew each other prior to the workshop. In the future, get name-tags and plan a better intro activity.
 If people are asked to bring old power adapters again, reading them could be part of the causal introduction period.
-Maybe something with the nametags&hellip;
+Maybe something with the name-tags&hellip;
 
 The code of conduct and social rules were received really positively and enthusiastically.
 In the group feedback, Riley brought up that the social rules at RC are introduced with short skits.
@@ -83,7 +83,7 @@ It might still work in this layout with a projector that can create a much large
 
 #### Base 10 to base 2
 
-Explaing how counting in binary works went smoothly, everyone picked it up pretty quickly.
+Explaining how counting in binary works went smoothly, everyone picked it up pretty quickly.
 I showed the [animated base system counter thing](https://codepen.io/uniphil/full/QQBEzx/) that I made at SFPC as part of the explanation, and received enthusiastic feedback about it in group feedback.
 Also, people asked for it to go faster (once you see how base 9 works, it's a small jump to base 2).
 
@@ -114,7 +114,7 @@ Bringing in adapters is fun for me at least, so I think I'll keep doing that, bu
 
 > Having more reliable and/or consistent hardware.
 
-The printers themselves were more finicky than expeted.
+The printers themselves were more finicky than expected.
 The nano and guts versions were not at all happy with the 5v supply, but the mini ones at least worked.
 Test page bugged out, but we could print.
 In the future, I'll only use mini printers.
@@ -184,7 +184,7 @@ Then, we let people use the ASCII charts to customize the message that gets sent
 This was fun!
 Being in pairs especially worked well here.
 
-One person had an issue that they beleived they by changing whitespace in their code.
+One person had an issue that they believed they by changing whitespace in their code.
 I could get better at my "well it's great that it works, but I'm not sure if that was the real problem" reaction.
 
 Another very quickly copy/pasted until they had an absolutely massive sequence of bytes that crashed the compiler and generally caused trouble that, unfortunately, we never got working.
@@ -296,7 +296,7 @@ Marketing, essentially.
 Unfortunately.
 
 In response to "How likely is it that you would recommend this workshop to a friend?", three people chose 10/10 stars and two chose 8/10.
-One of the 8-star responders (considdered "passive" in NPS) wrote,
+One of the 8-star responders (considered "passive" in NPS) wrote,
 
 > I (and anyone else at the first workshop) want to support this so am happy to actually recommend this to real folx
 
@@ -313,7 +313,7 @@ And included some hesitations:
 
 > It's a time and money commitment that not everyone can make
 
-I hope to run workshops in Kingston, Toronto, and Ottawa to start, and I beleive there is an audience for this in each of those places.
+I hope to run workshops in Kingston, Toronto, and Ottawa to start, and I believe there is an audience for this in each of those places.
 At least I hope.
 
 
@@ -353,7 +353,7 @@ The disposable costs for this workshop are very reasonable on a per-person basis
 
 **food total: $127**
 
-- $3.30: Printing (code of conduct, social rules, washroom sign, xkcd comic, tweet from Loren Shmidt, photo releases, ascii table booklets)
+- $3.30: Printing (code of conduct, social rules, washroom sign, xkcd comic, tweet from Loren Schmidt, photo releases, ascii table booklets)
 - $5: whiteboard markers
 - $80: car rental to pick up some of the materials
 
