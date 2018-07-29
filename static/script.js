@@ -1,6 +1,6 @@
 var preview; if (preview = document.getElementsByClassName('preview')[0]) {
   var current = 1;
-  var TOTAL = 11;
+  var TOTAL = 9;
 
   function name(n) {
     var s = ('0' + n).slice(-2);  // zero-pad
