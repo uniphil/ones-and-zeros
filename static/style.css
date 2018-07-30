@@ -331,11 +331,11 @@ blockquote.over-image cite {
 }
 
 blockquote.over-image p {
-  padding: 0.5em 2.5em;
+  padding: 0.5em 2.5em 0;
 }
 blockquote.over-image cite {
   display: block;
-  padding: 0 2.5em 0.333em;
+  padding: 0.5em 2.5em 0.333em;
   text-align: right;
 }
 
