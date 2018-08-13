@@ -346,6 +346,23 @@ blockquote.foodquote {
   background-image: url('/apply/food.jpg');
 }
 
+.doubles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5em;
+}
+.doubles .person {
+  flex: 1 1 11em;
+  padding: 0 0.5em;
+}
+.doubles h4 {
+  margin-top: 0;
+}
+.doubles img {
+  margin: 0;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 32em) {
   blockquote {
     margin-left: 0.5em;
