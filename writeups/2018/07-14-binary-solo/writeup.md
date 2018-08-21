@@ -27,7 +27,7 @@ Quoted text in this document comes from the individual feedback surveys.
 ### Introductions
 
 We did a quick name/pronouns/ice cream flavour round for everyone.
-It did the job, espcially since many people already knew several other attendees.
+It did the job, especially since many people already knew several other attendees.
 In the future I'd like to have name-tags, and maybe a more creative activity.
 
 The code of conduct and social rules were received positively and enthusiastically!
