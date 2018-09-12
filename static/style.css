@@ -381,6 +381,76 @@ blockquote.foodquote {
   }
 }
 
+.workshop {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 2em;
+}
+.workshop .media {
+  display: block;
+  flex: 0.5 1 33%;
+  margin-right: 0;
+  min-width: 200px;
+}
+.workshop .workshop-body {
+  flex: 1 0.5 67%;
+  padding: 0 0.5em 0 1em;
+}
+.workshop h3 {
+  margin: 0;
+}
+.workshop p {
+  font-size: 0.75em;
+  line-height: 1.1;
+}
+.workshop p.blah {
+  font-size: 1em;
+}
+.workshop a {
+}
+.workshop .details {
+  font-style: italic;
+}
+
+@media screen and (max-width: 32em) {
+  .workshop {
+    flex-direction: column;
+  }
+  .workshop .media {
+    flex: 0 0 150px;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    overflow: hidden;
+  }
+  .workshop .media img {
+    margin-top: -20%;
+  }
+  .workshop .workshop-body {
+    padding: 0.5em 0 1em;
+  }
+}
+
+ul.tags {
+  font-size: 0.6em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.tags li {
+  background: hsl(220, 100%, 97%);
+  border: 1px solid hsl(220, 60%, 85%);
+  color: hsl(220, 50%, 35%);
+  display: inline-block;
+  line-height: 1;
+  margin: 0.2em 0.333em 0.2em 0;
+  padding: 0.2em 0.3em 0;
+  border-radius: 1em 0.2em 0.2em 1em;
+}
+.tags li:before {
+  color: #36c;
+  content: "○ ";
+}
+
 footer {
   clear: both;
   color: #777;
@@ -412,6 +482,13 @@ li {
   li {
     line-height: 1.3em;
   }
+}
+
+h3 small {
+  font-size: 0.75em;
+  font-weight: normal;
+  opacity: 0.667;
+  text-transform: uppercase;
 }
 
 hr {
