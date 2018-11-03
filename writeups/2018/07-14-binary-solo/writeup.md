@@ -1,7 +1,7 @@
 ## Ones and Zeros: first run writeup
 
 On July 14<sup>th</sup> 2018, seven people crowded into my living room for the first Ones and Zeros workshop.
-This project has been in development since I attended the NYC [School for Poetic Computation](http://sfpc.io) sprint 2018 session, and based on the success of this first run, I hope to keep developing it further.
+This project has been in development since I attended the NYC [School for Poetic Computation](http://sfpc.io) spring 2018 session, and based on the success of this first run, I hope to keep developing it further.
 This documentation is intended to record what happened at the workshop, summarize the feedback, and lay some groundwork for transparency and accountability into the Ones and Zeros project.
 
 Feedback was collected twice: once as a group (over watermelon!) immediately following the workshop, and again individually through [a survey](https://airtable.com/shr6xgtVOrodeTksj).
