@@ -50,6 +50,10 @@ a[href="."] {
 .logo h1 a {
   color: #000;
 }
+.logo h1 img {
+  max-height: 110px;
+  max-width: 100%;
+}
 
 .logo p {
   margin: 0;
@@ -75,6 +79,7 @@ a[href="."] {
 
 @media screen and (max-width: 32em) {
   .top {
+    align-items: center;
     margin-bottom: 1em;
   }
   .logo p {
@@ -89,6 +94,10 @@ a[href="."] {
   }
   .nav li:last-child {
     padding-right: 0;
+  }
+  .logo h1 img {
+    max-height: 90px;
+    margin-right: 1em;
   }
 }
 
