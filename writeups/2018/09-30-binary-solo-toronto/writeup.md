@@ -86,5 +86,8 @@ We do have some insight into gender diversity via pronouns shared during introdu
 - 68% of total participants from all three Binary Solo workshops used non-male pronouns
 
 
+### Budget &amp; Accounting
+
+
 *Be more curious*
 
