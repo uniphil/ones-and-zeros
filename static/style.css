@@ -395,6 +395,9 @@ blockquote.foodquote {
   display: flex;
   margin-bottom: 2em;
 }
+.workshop.postponed {
+  opacity: 0.5;
+}
 .workshop .media {
   display: block;
   flex: 0.5 1 33%;
