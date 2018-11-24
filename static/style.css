@@ -9,10 +9,10 @@ html {
 }
 
 a {
-  color: #36c;
+  color: hsl(249, 70%, 50%);
 }
 a:visited {
-  color: #a38;
+  color: hsl(249, 70%, 50%);
 }
 a[href="."] {
   color: #000;
@@ -110,7 +110,7 @@ a[href="."] {
 }
 p.notice {
   border-left: 2px solid hsl(220, 60%, 50%);
-  background: hsla(317, 54%, 43%, 0.1);
+  background: hsla(249, 100%, 90%, 1);
   font-size: 0.85em;
   padding: 0.5em 0.5em 0.333em;
   margin: 0 -0.5em;
@@ -144,32 +144,14 @@ p.notice {
   transition: opacity 2s ease-in;
 }
 
-.preview h3 {
-  /*background: hsla(317, 54%, 43%, 0.667);*/
-  /*background: hsla(220, 60%, 50%, 0.667);*/
-  background: hsla(0, 0%, 0%,0.5);
-  bottom: 0;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 0;
-  padding: 0.333em 0.5em 0.25em;
-  position: absolute;
-  width: 100%;
-}
 @media screen and (max-width: 32em) {
   .lede p,
   .content p {
     line-height: 1.3em;
   }
-  .preview h3 {
-    font-size: 0.8em;
-  }
 }
 
 .email-signup {
-  /*background: hsla(317, 54%, 43%, 1);*/
   padding: 0 0.5em;
 }
 
@@ -200,7 +182,7 @@ input, button, a.button {
 }
 input {
   background: transparent;
-  border: 2px solid #36c;
+  border: 2px solid hsl(249, 75%, 60%);
   border-radius: 0;
   border-width: 0 0 2px;
   text-align: center;
@@ -210,11 +192,11 @@ input:placeholder-shown {
 }
 input:hover,
 input:focus {
-  border-color: #a38;
+  border-color: hsl(249, 75%, 60%);
 }
 button,
 a.button {
-  background: #36c;
+  background: hsl(249, 75%, 60%);
   border-color: #000;
   border-style: solid;
   border-radius: 0.25em;
@@ -255,16 +237,10 @@ a.button.big {
   margin: 0 -0.5em;
   max-width: calc(100% + 1em);
 }
-.content img + h2 {
-  background: hsla(0, 0%, 0%, 0.333);
-  color: #fff;
-  display: block;
-  line-height: 1em;
-  margin: -1.1em 0 0;
-  padding: 0.1em 0.25em 0;
-  position: relative;
-  text-shadow: 0 0 0.2em #000;
-  z-index: 1;
+.content h2 + h3 {
+  margin-top: -0.5rem;
+  font-style: italic;
+  color: #a090f8;
 }
 .content img.inline {
   max-width: 40%;
@@ -317,7 +293,7 @@ blockquote p {
   margin: 0;
 }
 blockquote cite {
-  color: hsl(317, 54%, 43%);
+  color: #a090f8;
   display: block;
   font-size: 0.8em;
   text-align: right;
@@ -353,6 +329,15 @@ blockquote.paperquote {
 }
 blockquote.foodquote {
   background-image: url('/apply/food.jpg');
+}
+blockquote.showquote {
+  background-image: url('/workshops/2018/12-16-binary-solo-toronto/kingston-trio.jpg');
+  background-position: 50% 24%;
+  padding: 12em 0 0;
+}
+blockquote.breadquote {
+  background-image: url('/workshops/2018/12-16-binary-solo-toronto/breadboard.jpg');
+  padding: 12em 0 0;
 }
 
 .doubles {
@@ -459,7 +444,7 @@ ul.tags {
   border-radius: 1em 0.2em 0.2em 1em;
 }
 .tags li:before {
-  color: #36c;
+  color: hsl(249, 75%, 60%);
   content: "○ ";
 }
 
