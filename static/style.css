@@ -346,11 +346,16 @@ blockquote.breadquote {
   margin: 0 -0.5em;
 }
 .doubles .person {
-  flex: 1 1 11em;
+  flex: 0 1 calc(33% - 1em);
   padding: 0 0.5em;
 }
 .doubles h4 {
-  margin-top: 0;
+  margin-bottom: 0;
+}
+.doubles p {
+  font-size: 0.85em;
+  font-style: italic;
+  margin: 0;
 }
 .doubles img {
   margin: 0;
@@ -372,6 +377,9 @@ blockquote.breadquote {
   }
   blockquote.over-image p {
     font-size: 0.85em;
+  }
+  .doubles .person {
+    flex: 0 1 calc(50% - 1em);
   }
 }
 
