@@ -20,14 +20,6 @@ a[href="."] {
   text-decoration: none;
 }
 
-.browserupgrade {
-  background: #eee;
-  border-bottom: 1px solid #ddd;
-  font-size: 0.85em;
-  margin: 0;
-  padding: 0.5em 0.5em 0.333em;
-}
-
 .container {
   box-sizing: border-box;
   margin: 0 auto;
