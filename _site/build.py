@@ -19,19 +19,24 @@ def indent(text, spacer):
 def inject(file_path, pieces):
     parts_injected = []
     def replacer(match):
+        original = match.group()
         parts = match.groupdict()
         name = parts['name']
         spacing = parts['spacing']
         try:
             site_content = pieces[name]
         except KeyError:
-            return match.group()
-        parts_injected.append(name)
-        return indent('<!--site:{0}-->\n{1}\n<!--/site:{0}-->'.format(name, site_content), spacing)
+            from sys import stderr
+            stderr.write('Warning: no template: "{}" ({})\n'.format(name, file_path))
+            return original
+        updated = indent('<!--site:{0}-->\n{1}\n<!--/site:{0}-->'.format(name, site_content), spacing)
+        if updated != original:
+            parts_injected.append(name)
+        return updated
     with open(file_path, 'r') as f:
         content = f.read()
     (injected, n) = subn(r'(?P<spacing>[ \t]*)<!--site\:(?P<name>.*?)-->\n(?P<old_content>.*?)\s*<!--/site\:(?P=name)-->', replacer, content, 0, MULTILINE | DOTALL)
-    if n == 0:  # no content injected
+    if n == 0 or len(parts_injected) == 0:  # no content injected
         return
     with open(file_path, 'w') as f:
         f.write(injected)
