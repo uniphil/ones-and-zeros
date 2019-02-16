@@ -34,17 +34,27 @@ a[href="."] {
   padding: 0 0.5em;
   margin-bottom: 1.5em;
 }
+.logo-smol .top {
+  border-bottom: 1px solid hsla(249, 100%, 90%, 1);
+  margin-bottom: 3em;
+}
 
 .logo h1 {
   font-size: 1.618em;
   margin: 0.5em 0 0;
 }
+.logo-smol .logo h1 {
+  margin-top: 0;
+}
 .logo h1 a {
   color: #000;
 }
 .logo h1 img {
-  max-height: 110px;
+  max-height: 90px;
   max-width: 100%;
+}
+.logo-smol .logo h1 img {
+  max-height: 45px;
 }
 
 .logo p {
@@ -67,6 +77,9 @@ a[href="."] {
 .nav li:last-child {
   margin-right: 0;
   padding-right: 0;
+}
+.logo-smol .nav {
+  font-size: 0.85em;
 }
 
 @media screen and (max-width: 32em) {

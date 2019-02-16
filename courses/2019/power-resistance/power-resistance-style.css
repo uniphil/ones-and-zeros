@@ -1,0 +1,39 @@
+body {
+  background: #FEF493;
+}
+
+.container {
+  padding-top: 0;
+}
+
+.top {
+  background: #A090F8;
+  align-items: center;
+  margin-bottom: 0;
+}
+.top a {
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+.logo h1 {
+  margin: 0.5rem 0 0;
+}
+.logo h1 img {
+  max-height: 41px;
+}
+
+.content {
+  background: #fff;
+  border: 0.2em solid #A090F8;
+  padding-bottom: 2em;
+}
+
+hr {
+  border-color: #A090F8;
+}
+
+footer {
+  background: #A090F8;
+  margin-top: 0;
+}
