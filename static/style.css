@@ -352,7 +352,10 @@ blockquote.breadquote {
 }
 .doubles .person {
   flex: 0 1 calc(33% - 1em);
-  padding: 0 0.5em;
+  padding: 0.667em 0.5em 2em;
+}
+.doubles .person h4 {
+  margin-top: 0;
 }
 .doubles h4 {
   margin-bottom: 0;
