@@ -514,3 +514,25 @@ hr {
   font-size: 0.85em;
   margin-top: 4rem;
 }
+
+.store-items img {
+  max-width: 300px;
+}
+
+.store-item-main-images {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-item-main-images img {
+  display: block;
+  flex: 1 1 50%;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 32em) {
+  .store-item-main-images {
+    display: block;
+  }
+}

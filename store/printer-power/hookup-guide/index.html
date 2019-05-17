@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Open Studio ✨ Ones and Zeros</title>
-    <meta name="description" content="Free, public, hands-on time with our electronics kits. ✨" />
+    <title>Printer Power hookup guide ✨ Ones and Zeros</title>
+    <meta name="description" content="How to use the Printer Power adapter for better thermal prints ✨" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/static/normalize.css" />
     <link rel="stylesheet" href="/static/style.css" />
@@ -12,14 +12,15 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@onesandzerosca">
     <meta property="fb:admins" content="510991315" />
-    <meta property="og:url" content="https://onesandzeros.ca/open-studio/" />
-    <meta property="og:title" content="Free, public, hands-on time with our electronics kits." />
-    <meta property="og:image" content="https://onesandzeros.ca/open-studio/open-studio-full.jpg" />
+    <meta property="og:url" content="https://onesandzeros.ca/store/printer-power/hookup-guide/" />
+    <meta property="og:title" content="Printer Power hookup guide ✨" />
+    <meta property="og:description" content="How to use the Printer Power adapter for better thermal prints ✨" />
+    <meta property="og:image" content="https://onesandzeros.ca/store/printer-power/serial-hookup.jpg" />
     <meta property="og:site_name" content="Ones and Zeros ✨ Art + Tech Workshops" />
     <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2018-11-27T10:0:00-05:00" />
-    <meta property="article:section" content="Free & Public" />
-    <meta property="article:tag" content="Open Studio" />
+    <meta property="article:published_time" content="2019-05-17T10:0:00-05:00" />
+    <meta property="article:section" content="Documentation" />
+    <meta property="article:tag" content="Thermal printer" />
     <meta property="article:tag" content="Creative technology" />
     <meta property="article:tag" content="Arduino" />
 
@@ -42,19 +43,66 @@
       </div>
       <!--/site:header-->
       <div class="content">
+        <h2>Printer Power hookup guide</h2>
 
-        <img src="./open-studio-full.jpg" alt="Open Studio" />
+        <p>How to use your <a href="..">Printer Power</a> for better thermal prints.</p>
 
-        <p>Join us on Wednesday and get some more hands-on time with the arduino + thermal printer kits we use in the Binary Solo workshop. 7:00pm&ndash;10:00pm Dec 5<sup>th</sup> at <a href="https://interaccess.org/studio" target="_blank">InterAccess</a> in Toronto</p>
+        <p><em>This document is a work in progress!</em></p>
 
-        <p>Open Studio is primarily intended as a way to get more hands-on time with the electronics that we learn about in our <a href="/participate/">workshops</a>, but everyone is absolutely welcome to come and experiment.</p>
+        <h3>Choose a power supply</h3>
 
-        <p>We have a <a href="/code-of-conduct/">Code of Conduct</a> and four <a href="/social-rules/">Social Rules</a> to ensure a safe environment for everyone ❤️</p>
+        <h3>Connect your printer</h3>
+        <p>
+          <img src="csn-a2.jpg" alt="CSN-A2 printer from Adafruit and SparkFun" />
+        </p>
+        <p>
+          <img src="3-pin.jpg" alt="Printer Power with 2 3-pin JST connectors" />
+        </p>
+        <p>
+          <img src="nano.jpg" alt="Nano printer from Adafruit" />
+        </p>
+        <p>
+          <img src="jp-panel.jpg" alt="JP Panel Printer" />
+        </p>
+        <p>
+          <img src="5-pin.jpg" alt="Printer Power with 5-pin JST connector" />
+        </p>
+
+        <h4>Printer diagnostic test</h4>
+
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336916511?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        <p>
+          <img src="test-page.jpg" alt="Printer self-test print page" />
+        </p>
+
+        <h3>Connect to Arduino</h3>
+        <p>
+          <img src="serial-hookup.jpg" alt="GND, RX, and TX connected to Arduino" />
+        </p>
+
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336919194?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        <h4>Powering Arduino</h4>
+        <p>
+          <img src="vh-hookup.jpg" alt="VH used to also power Arduino" />
+        </p>
+
+        <h3>Advanced: Use the screw-terminal adapter for power supplies with incompatible connectors</h3>
+
+        <h3>Advanced: Adjust the <code>VH</code> voltage</h3>
+        <p>
+          <img src="test.jpg" alt="multimeter measuring the 'test' pads on Printer Power" />
+        </p>
+
+
+        <p style="text-align: center; margin: 2em 0"><a href="https://www.tindie.com/products/onesandzeros/printer-power/" class="button big" target="_blank">Buy Printer Power for $9 USD on Tindie</a></p>
+
+        <p>→ <a href="..">More about Printer Power ✨</a></p>
 
         <hr />
 
-        <h3>Workshop and class announcements</h3>
-        <p>Sign up for our mailing list:</p>
+        <p>Sign up for our mailing list for workshop announcements</p>
         <!--site:mailing-signup-->
         <div id="mc_embed_signup" class="email-signup">
           <form action="https://csc11.us2.list-manage.com/subscribe/post?u=81efec9c295da7f4479e67c1e&amp;id=e14fc85eef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
