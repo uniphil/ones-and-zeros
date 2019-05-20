@@ -43,54 +43,87 @@
       </div>
       <!--/site:header-->
       <div class="content">
-        <h2>Printer Power hookup guide</h2>
+        <h2><a href="..">Printer Power</a> hookup guide</h2>
 
-        <p>How to use your <a href="..">Printer Power</a> for better thermal prints.</p>
+        <p>
+          <img src="vh-hookup.jpg" alt="VH used to also power Arduino" />
+        </p>
 
         <p><em>This document is a work in progress!</em></p>
 
-        <h3>Choose a power supply</h3>
+        <div class="toc">
+          <h3>Contents</h3>
+          <ul>
+            <li><a href="#power-supply">Choosing a power supply</a></li>
+            <li><a href="#connecting-your-printer">Connecting your printer</a></li>
+            <li><a href="#connect-to-arduino">Connecting to Arduino</a></li>
+            <li><a href="#power-for-arduino">Powering Arduino with Printer Power</a></li>
+            <li><a href="#screw-terminal-adapter">Advanced: Screw-terminal adapter for power supplies with the wrong tip</a></li>
+            <li><a href="#adjust-vh">Advanced: Adjusting the printer voltage</a></li>
+          </ul>
+          <p>You can buy Printer Power for <a href="https://www.tindie.com/products/onesandzeros/printer-power/" target="_blank">$9 USD on Tindie</a></p>
+        </div>
 
-        <h3>Connect your printer</h3>
-        <p>
+        <h3 id="power-supply">Choosing a power supply</h3>
+        <p>Printer Power will work well with <em>most</em> DC adapters between 9 and 24 volts. If you have  box of old power adapters kicking around, chances are that one of them will work!</p>
+
+        <h4>Voltage</h4>
+        <p>Printer Power works well because it uses a <a href="https://en.wikipedia.org/wiki/Buck_converter" target="_blank">switching DC-DC converter</a> to trade voltage ("volts" or just "V") for more current ("amps" or just "A"). It's pre-configured to provide your printer with 7V regardless of the input voltage, but this <a href="#adjust-vh">can be adjusted</a> if you need it.</p>
+
+        <h3 id="connecting-your-printer">Connecting your printer</h3>
+
+        <h4>CSN-A2 Printer</h4>
+        <figure>
           <img src="csn-a2.jpg" alt="CSN-A2 printer from Adafruit and SparkFun" />
-        </p>
-        <p>
+          <figcaption>CSN-A2 with 2 3-pin JST connectors from <a href="https://www.adafruit.com/product/597" target="_blank">Adafruit</a> and <a href="https://www.sparkfun.com/products/14970" target="_blank">SparkFun</a></figcaption>
+        </figure>
+        <figure>
           <img src="3-pin.jpg" alt="Printer Power with 2 3-pin JST connectors" />
-        </p>
-        <p>
+          <figcaption>Printer Power with power and serial cables for CSN-A2</figcaption>
+        </figure>
+        <p>The printers come with two cables: a 2-wire black/red cable for power ("DC IN"), and a 3-wire black/yellow/green cable for serial communication ("TTL").</p>
+        <p>Connect both cables to your printer and to Printer Power. That's it! You can now run the <a href="#diagnostic">diagnostic test</a>.</p>
+
+        <h4 style="clear: right">Adafruit Nano and JP Panel Thermal Receipt Printer</h3>
+        <figure>
           <img src="nano.jpg" alt="Nano printer from Adafruit" />
-        </p>
-        <p>
+          <figcaption><a href="https://www.adafruit.com/product/2752" target="_blank">Adafruit Nano Thermal Receipt Printer</a></figcaption>
+        </figure>
+        <figure>
           <img src="jp-panel.jpg" alt="JP Panel Printer" />
-        </p>
-        <p>
+          <figcaption>JP Panel printer</figcaption>
+        </figure>
+        <figure>
           <img src="5-pin.jpg" alt="Printer Power with 5-pin JST connector" />
-        </p>
+          <figcaption>Printer Power with 5-pin connector</figcaption>
+        </figure>
+        <p>Nano printers (from Adafruit) and JP Panel printers (most cheap Chinese models) come with a single 5-pin connector.</p>
+        <p>Connect it to the 5-pin connector on Printer Power and you're all set to run the <a href="#diagnostic">diagnostic test</a>!</p>
 
-        <h4>Printer diagnostic test</h4>
 
+        <h4 id="diagnostic" style="clear: right">Diagnostic test</h4>
+        <p>asdf</p>
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336916511?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
         <p>
           <img src="test-page.jpg" alt="Printer self-test print page" />
         </p>
 
-        <h3>Connect to Arduino</h3>
+        <h3 id="connect-to-arduino">Connect to Arduino</h3>
         <p>
           <img src="serial-hookup.jpg" alt="GND, RX, and TX connected to Arduino" />
         </p>
 
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336919194?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-        <h4>Powering Arduino</h4>
+        <h4 id="power-for-arduino">Powering Arduino with Printer Power</h4>
         <p>
           <img src="vh-hookup.jpg" alt="VH used to also power Arduino" />
         </p>
 
-        <h3>Advanced: Use the screw-terminal adapter for power supplies with incompatible connectors</h3>
+        <h3 id="screw-terminal-adapter">Advanced: Screw-terminal adapter for power supplies with the wrong tip</h3>
 
-        <h3>Advanced: Adjust the <code>VH</code> voltage</h3>
+        <h3 id="adjust-vh">Advanced: Adjusting the printer voltage</h3>
         <p>
           <img src="test.jpg" alt="multimeter measuring the 'test' pads on Printer Power" />
         </p>
