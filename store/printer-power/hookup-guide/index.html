@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/static/normalize.css" />
     <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/hookup.css" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@onesandzerosca">
@@ -25,7 +26,7 @@
     <meta property="article:tag" content="Arduino" />
 
   </head>
-  <body>
+  <body class="logo-smol">
     <div class="container">
       <!--site:header-->
       <div class="top">
@@ -43,9 +44,96 @@
       </div>
       <!--/site:header-->
       <div class="content">
-        <h2><a href="..">Printer Power</a> hookup guide</h2>
+        <div style="display: flex;">
+          <div>
+            <h2>Printer Power hookup guide</h2>
+            <p><a href="..">Product details</a> | <a href="https://www.tindie.com/products/onesandzeros/printer-power/" target="_blank">$9 USD on Tindie</a></p>
+          </div>
+          <img src="../unit-thumb.jpg" alt="printer power" style="max-width: 200px; margin-left: 1em;" />
+        </div>
 
-        <p>
+        <section class="hookup-step active" id="choose-printer">
+          <header>
+            <h3><a class="activate" href="#choose-printer">1. Choose your printer</a></h3>
+          </header>
+          <section class="step-content">
+            <ul class="hookup-choice">
+              <li class="choice" data-choice-tag="csn-a2 2-3-pins">
+                <h4>CSN-A2 "Mini"</h4>
+                <figure>
+                  <img src="csn-a2.jpg" alt="CSN-A2 printer from Adafruit and SparkFun" />
+                  <figcaption>From <a href="https://www.adafruit.com/product/597" target="_blank">Adafruit</a> and <a href="https://www.sparkfun.com/products/14970" target="_blank">SparkFun</a></figcaption>
+                </figure>
+              </li>
+              <li class="choice" data-choice-tag="nano 5-pins">
+                <h4>Adafruit Nano</h4>
+                <figure>
+                  <img src="nano.jpg" alt="Nano printer from Adafruit" />
+                  <figcaption>From <a href="https://www.adafruit.com/product/2752" target="_blank">Adafruit</a></figcaption>
+                </figure>
+              </li>
+              <li class="choice" data-choice-tag="nano 5-pins">
+                <h4>JP Panel</h4>
+                <figure>
+                  <img src="jp-panel.jpg" alt="JP Panel Printer" />
+                  <figcaption>JP Panel printer</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="hookup-step active" id="connect-power">
+          <header>
+            <h3><a class="activate" href="#connect-power">2. Connect power</a></h3>
+          </header>
+          <section class="step-content">
+            <ul class="hookup-choice">
+              <li class="choice">
+                <h4>Compatible supply</h4>
+                <figure>
+                  <img src="" alt="" />
+                  <figcaption>9–24V, 2.1mm barrel, positive tip</figcaption>
+                </figure>
+              </li>
+              <li class="choice">
+                <h4>Using screw-terminal adapter</h4>
+                <figure>
+                  <img src="" alt="" />
+                  <figcaption>9–24V with different tip or polarity</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="hookup-step active" id="print-stuff">
+          <header>
+            <h3><a class="activate" href="#print-stuff">3. Print stuff!</a></h3>
+          </header>
+          <section class="step-content">
+            <ul class="hookup-choice">
+              <li class="choice">
+                <h4>Diagnostic test page</h4>
+                <figure>
+                  <img src="test-page.jpg" alt="Printer self-test print page" />
+                  <figcaption>asdf</figcaption>
+                </figure>
+              </li>
+              <li class="choice">
+                <h4>Arduino</h4>
+                <figure>
+                  <img src="serial-hookup.jpg" alt="GND, RX, and TX connected to Arduino" />
+                  <figcaption>Print using SoftwareSerial</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+
+
+        <!-- <p>
           <img src="vh-hookup.jpg" alt="VH used to also power Arduino" />
         </p>
 
@@ -126,7 +214,7 @@
         <h3 id="adjust-vh">Advanced: Adjusting the printer voltage</h3>
         <p>
           <img src="test.jpg" alt="multimeter measuring the 'test' pads on Printer Power" />
-        </p>
+        </p> -->
 
 
         <p style="text-align: center; margin: 2em 0"><a href="https://www.tindie.com/products/onesandzeros/printer-power/" class="button big" target="_blank">Buy Printer Power for $9 USD on Tindie</a></p>
@@ -170,9 +258,16 @@
           | <a href="/privacy/">privacy</a>
           | <a href="/about/#contact">contact</a></p>
       </footer>
-      <img src="https://counter.cv2.ca/count.gif" style="position:absolute;left:-9999em" alt="visitor counter" aria-hidden="true" />
+      <img src="https://beep-beep.net/count.gif" style="position:absolute;left:-9999em" alt="visitor counter" aria-hidden="true"/>
+      <script type="text/javascript">
+      (function(a,d,i){
+      function L(e){x('remove');d.querySelector('[src^="https://beep-beep.net/"]').src+='x'}
+      function x(t){a.map(function(n){d[t+'EventListener'](n,L)})};x('add')
+      })(['mousemove','hover','touchstart'],document)
+      </script>
       <!--/site:footer-->
     </div>
     <script type="text/javascript" src="/static/script.js"></script>
+    <script type="text/javascript" src="/static/hookup.js"></script>
   </body>
 </html>
