@@ -536,20 +536,3 @@ hr {
     display: block;
   }
 }
-
-.toc {
-  background: hsla(249, 100%, 90%, 1);
-  font-size: 0.8em;
-  padding: 0.1em 1.2em;
-}
-.toc h3 {
-  margin-top: 1em;
-}
-figure {
-  clear: right;
-  float: right;
-  max-width: 40%;
-}
-figcaption {
-  font-size: 0.8em;
-}
